@@ -852,7 +852,7 @@ a:active {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10rem !important;
+  bottom: -15rem !important;
   margin: 0 auto;
   overflow: visible;
   stroke: var(--DARK-GRAY);
