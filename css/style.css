@@ -848,11 +848,11 @@ a:active {
   transition: var(--TRANSITION);
 }
 .wave {
-  background: #000;
   width: 200px;
   position: absolute;
   left: 0;
   right: 0;
+  bottom: -10rem !important;
   margin: 0 auto;
   overflow: visible;
   stroke: var(--DARK-GRAY);
@@ -1623,9 +1623,6 @@ a:active {
     right: -20%;
     bottom: -20%;
   }
-  .wave {
-    /* bottom: -10rem; */
-  }
   .services__header {
     margin-top: -5rem;
     -webkit-box-orient: vertical;
@@ -1708,9 +1705,7 @@ a:active {
   .swiper__h2 {
     font-size: 2rem;
   }
-  .wave {
-    bottom: -15rem !important;
-  }
+
   .mob-menu {
     padding-left: 1rem;
   }
