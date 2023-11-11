@@ -848,6 +848,7 @@ a:active {
   transition: var(--TRANSITION);
 }
 .wave {
+  display: block;
   width: 200px;
   position: absolute;
   left: 0;
@@ -1623,7 +1624,7 @@ a:active {
     bottom: -20%;
   }
   .wave {
-    bottom: -10rem;
+    /* bottom: -10rem; */
   }
   .services__header {
     margin-top: -5rem;
