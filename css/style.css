@@ -1707,7 +1707,9 @@ a:active {
   .swiper__h2 {
     font-size: 2rem;
   }
- 
+  .wave {
+    bottom: -5rem;
+  }
   .mob-menu {
     padding-left: 1rem;
   }
