@@ -847,12 +847,15 @@ a:active {
   -o-transition: var(--TRANSITION);
   transition: var(--TRANSITION);
 }
+.wave__container {
+  height: 200px;
+  width: 200px;
+}
 .wave {
   width: 200px;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -15rem !important;
   margin: 0 auto;
   overflow: visible;
   stroke: var(--DARK-GRAY);
@@ -1705,7 +1708,6 @@ a:active {
   .swiper__h2 {
     font-size: 2rem;
   }
-
   .mob-menu {
     padding-left: 1rem;
   }
