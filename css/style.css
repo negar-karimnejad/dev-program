@@ -52,6 +52,7 @@ a:any-link {
   --TRANSITION: all 300ms ease-in-out;
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: var(--FS);
   font-family: var(--FF);
@@ -73,7 +74,7 @@ h3 {
   margin-bottom: 0.5em;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h3 {
   font-size: 2rem;
@@ -195,6 +196,7 @@ a:active {
 .overlayer-hidden {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 .overlayer.zoom .loader svg {
   stroke-width: 60;
@@ -216,7 +218,7 @@ a:active {
   position: fixed;
   z-index: -1;
   -webkit-animation: shape-move 100s forwards infinite;
-  animation: shape-move 100s forwards infinite;
+  animation: shape-move 50s forwards infinite;
 }
 .background__shape1 {
   left: 10%;
@@ -359,7 +361,7 @@ a:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: fixed;
+  position: sticky;
   top: 2.5rem;
   right: 3rem;
   z-index: 100;
@@ -417,7 +419,7 @@ a:active {
   top: 0;
   right: -100vw;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #888ea0b3;
   z-index: 100;
   -webkit-transition: right 1s ease;
@@ -431,7 +433,6 @@ a:active {
   height: 100vh;
   background-color: var(--WHITE);
   position: absolute;
-  right: -4rem;
   top: 0;
   width: 35rem;
   display: -webkit-box;
@@ -445,7 +446,7 @@ a:active {
   z-index: 10;
 }
 .mob-menu__ul {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 .mob-menu__link {
   position: relative;
@@ -1178,7 +1179,7 @@ a:active {
 }
 .about__content h2 {
   color: #5d74b6;
-  width: 80%;
+  /* width: 80%; */
 }
 .about__img {
   width: 50%;
@@ -1353,6 +1354,7 @@ a:active {
   -webkit-animation: wave 20s -2s linear infinite;
   animation: wave 20s -2s linear infinite;
   opacity: 1;
+  z-index: 1;
 }
 @-webkit-keyframes wave {
   0% {
@@ -1636,7 +1638,7 @@ a:active {
     justify-content: center;
   }
   .nav-icon__container {
-    position: absolute;
+    position: fixed;
   }
   .projects p {
     font-size: 1rem;
@@ -1704,5 +1706,40 @@ a:active {
   }
   .swiper__h2 {
     font-size: 2rem;
+  }
+  .wave {
+    bottom: -18rem;
+  }
+  .mob-menu {
+    padding-left: 1rem;
+  }
+  .nav-icon__container {
+    right: 2rem;
+    top: 1.5rem;
+  }
+  .service__card-caption {
+    font-size: 0.87rem !important;
+    margin-top: 0rem;
+  }
+  .projects {
+    width: 100%;
+    border-radius: 0;
+  }
+  .ocean {
+    top: -72.5px;
+  }
+  @keyframes wave {
+    0% {
+      -webkit-transform: translateX(-10%);
+      transform: translateX(-10%);
+    }
+    50% {
+      -webkit-transform: translateX(-15%);
+      transform: translateX(-15%);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
   }
 }
