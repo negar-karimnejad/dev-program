@@ -848,7 +848,7 @@ a:active {
   transition: var(--TRANSITION);
 }
 .wave {
-  display: block;
+  background: #000;
   width: 200px;
   position: absolute;
   left: 0;
