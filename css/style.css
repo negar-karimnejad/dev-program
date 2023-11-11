@@ -1708,7 +1708,7 @@ a:active {
     font-size: 2rem;
   }
   .wave {
-    bottom: -18rem;
+    bottom: -15rem;
   }
   .mob-menu {
     padding-left: 1rem;
@@ -1724,6 +1724,7 @@ a:active {
   .projects {
     width: 100%;
     border-radius: 0;
+    padding-top: 1rem;
   }
   .ocean {
     top: -72.5px;
