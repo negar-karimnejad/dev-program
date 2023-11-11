@@ -1708,7 +1708,7 @@ a:active {
     font-size: 2rem;
   }
   .wave {
-    bottom: -5rem;
+    top: 0;
   }
   .mob-menu {
     padding-left: 1rem;
