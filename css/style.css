@@ -434,7 +434,6 @@ a:active {
   background-color: var(--WHITE);
   position: absolute;
   top: 0;
-  right: 0;
   width: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1741,5 +1740,10 @@ a:active {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
     }
+  }
+}
+@media (min-width: 552px) {
+  .mob-menu {
+    right: 0;
   }
 }
