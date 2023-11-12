@@ -2,7 +2,7 @@ const nav_icon = document.querySelector(".nav-icon");
 const menu__container = document.querySelector(".mob-menu__container");
 const nav_icon__container = document.querySelector(".nav-icon__container");
 const navMenu = document.querySelector(".nav-menu");
-const content__swiper = document.querySelector(".content__swiper");
+const content__swiper = document.querySelector(".swiper-pagination1");
 
 function first() {
   setTimeout(() => {
@@ -63,6 +63,21 @@ const isBookmarkScrollingDown = () => {
   return goingDown;
 };
 
+const isSwiperScrollingDown = () => {
+  let previousScrollPosition = 200;
+  let swiperGoingDown = false;
+
+  let scrollPosition = window.pageYOffset;
+
+  if (scrollPosition > previousScrollPosition) {
+    swiperGoingDown = true;
+  }
+
+  previousScrollPosition = scrollPosition;
+
+  return swiperGoingDown;
+};
+
 const isSocialScrollingDown = () => {
   let previousScrollPosition = 540;
   let socialGoingDown = false;
@@ -96,6 +111,7 @@ const isWaveScrollingDown = () => {
 
   return waveGoingDown;
 };
+
 const isScrollPageScrollingDown = () => {
   let previousScrollPosition = 300;
   let scrollGoingDown = false;
@@ -139,6 +155,15 @@ const handleScroll = () => {
   } else {
     scrollPage.classList.remove("go-up");
   }
+
+  if (isSwiperScrollingDown()) {
+    content__swiper.classList.add("scroll-down");
+    content__swiper.classList.remove("scroll-up");
+  } else {
+    content__swiper.classList.add("scroll-up");
+    content__swiper.classList.remove("scroll-down");
+  }
+  console.log(isSwiperScrollingDown());
 };
 
 window.addEventListener("scroll", handleScroll);
