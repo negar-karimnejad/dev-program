@@ -6,7 +6,7 @@
 <section width="100%" display="flex" align="center" justify-content="center" gap="2rem">
 <img src="img/image1.png"/>
   <hr/>
-<img src="img/image2.png" width="500" />
-<img src="img/image3.png" width="500" />
+<img src="img/image2.png" width="450" />
+<img src="img/image3.png" width="450" />
 </section>
 
